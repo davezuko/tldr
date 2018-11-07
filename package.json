@@ -1,0 +1,24 @@
+{
+  "name": "@packit/tldr",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "bin": {
+    "tldr": "./bin/tldr"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.js",
+    "bin",
+    "lib"
+  ],
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "yargs": "^12.0.2"
+  },
+  "devDependencies": {
+    "jest": "^23.6.0",
+    "prettier": "^1.14.3"
+  }
+}
