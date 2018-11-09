@@ -1,11 +1,11 @@
 const { argv } = require("yargs");
-const TLDR = require("../index");
+const TLDR = require("../lib/index");
 
 const tldr = new TLDR(argv);
-const [topic] = argv._;
+const patterns = argv._;
 
-if (topic) {
-  tldr.printTopic(topic);
+if (patterns.length) {
+  patterns.forEach(pattern => tldr.printMatchingTopics(pattern));
 } else {
   tldr.printIndex();
 }

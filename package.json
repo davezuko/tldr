@@ -1,7 +1,7 @@
 {
   "name": "@packit/tldr",
   "version": "0.1.1",
-  "main": "index.js",
+  "main": "lib/index.js",
   "license": "MIT",
   "scripts": {
     "tldr": "node ./cli/index.js"
