@@ -6,30 +6,30 @@ const printer = require("./lib/printer");
 class TLDR {
   constructor(opts) {
     this._config = config.init(opts);
-    this._fs = new FS(this._config.root);
+    this._fs = new FS(this._config.topics);
   }
 
-  _assertTopicExists(topic) {
-    if (!this._fs.topicExists(topic)) {
-      throw new Error(
-        `Could not find a markdown document for the topic: "${topic}"`
-      );
-    }
-  }
-
-  suggestTopics() {
-    return this._fs.listTopics();
+  printIndex() {
+    const record = parser.parseMarkdown(this._fs.readIndex());
+    printer.printIndex(record, this.listTopics());
   }
 
   printTopic(topic) {
-    this._assertTopicExists(topic);
+    if (!this.topicExists(topic)) {
+      printer.printTopicNotFound(topic, this.listTopics());
+      return;
+    }
     const record = parser.parseMarkdown(this._fs.readTopic(topic));
     printer.printTopic(record);
   }
+
+  topicExists(topic) {
+    return this._fs.topicExists(topic);
+  }
+
+  listTopics() {
+    return this._fs.listTopics();
+  }
 }
 
-function init(config) {
-  return new TLDR(config);
-}
-
-module.exports = { init };
+module.exports = TLDR;

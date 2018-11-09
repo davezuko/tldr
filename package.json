@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "tldr": "node ./bin/tldr.js"
+  },
   "bin": {
     "tldr": "./bin/tldr"
   },
