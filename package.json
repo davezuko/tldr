@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "tldr": "node ./bin/tldr.js"
+    "tldr": "node ./cli/index.js"
   },
   "bin": {
     "tldr": "./bin/tldr"
