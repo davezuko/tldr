@@ -1,13 +1,19 @@
 {
   "name": "@packit/tldr",
   "version": "0.2.0",
+  "description": "Easily manage TL;DR pages for your project",
   "main": "lib/index.js",
   "license": "MIT",
-  "scripts": {
-    "tldr": "node ./cli/index.js"
+  "author": "David Zukowski <david@zuko.me> (https://zuko.me)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davezuko/tldr.git"
   },
   "bin": {
     "tldr": "./bin/tldr"
+  },
+  "scripts": {
+    "tldr": "node ./cli/index.js"
   },
   "files": [
     "LICENSE",
