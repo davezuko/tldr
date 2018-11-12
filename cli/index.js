@@ -7,6 +7,9 @@ switch (argv._[0]) {
   case "init!":
     tldr.init();
     break;
+  case "list!":
+    tldr.printTopics();
+    break;
   default:
     const patterns = argv._;
     if (patterns.length) {
