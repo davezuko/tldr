@@ -33,6 +33,9 @@ npx tldr "*"
 
 # display topics matching pattern:
 npx tldr "build*"
+
+# search all topics:
+npx tldr "*" | grep "pattern" -A 1 -B 1
 ```
 
 ## Meta Commands
