@@ -19,11 +19,11 @@ Additionally, you can optionally create `{{topic}}.md` files in `docs/tldr`.
 
 ## Usage
 
-> yarn users can replace `npx` with `yarn`, if preferred.
+> yarn users can replace `npx` with `yarn`, if desired.
 
 ```sh
-npx tldr            # display the content of tldr.md
-npx tldr {{topic}}  # display topic from ./docs/tldr/{{topic}}.md
+npx tldr              # display the content of tldr.md
+npx tldr {{topic}}    # display topic from ./docs/tldr/{{topic}}.md
 
 # display multiple topics:
 npx tldr {{topic1}} {{topic2}} {{topic3}}
@@ -34,17 +34,26 @@ npx tldr "*"
 # display topics matching pattern:
 npx tldr "build*"
 
+# display TL;DR page for an external package:
+npx tldr jest?        # reads from node_modules
+
 # search all topics:
 npx tldr "*" | grep "pattern" -A 1 -B 1
 ```
 
 ## Meta Commands
 
-> All meta commands (that act on TL;DR itself, and not the documents) are suffixed with `!`.
+> All meta commands are suffixed with `!`.
 
 ```sh
 npx tldr init!   # initialize a TLDR.md file for your project
 npx tldr list!   # list available topics (found in docs/tldr)
+```
+
+## Options
+
+```sh
+npx tldr --root /some/path/here    # run tldr in another directory
 ```
 
 ## Prior Art
