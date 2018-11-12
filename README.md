@@ -1,6 +1,6 @@
 # TL;DR
 
-Easily manage TL;DR pages for your project to help users figure out what scripts and processes are available. These pages act as quick reference manuals that supplement richer documentation.
+Easily create and manage TL;DR pages to help users find their way around your project. These pages are designed to supplement, not replace, richer documentation, and should act as a quick reference manual for common tasks.
 
 ## Installation
 
@@ -14,6 +14,8 @@ npx tldr init!
 ```
 
 Additionally, you can optionally create `{{topic}}.md` files in `docs/tldr`.
+
+> These topics can be displayed by running `npx tldr {{topic}}`. See [usage](#usage) for more.
 
 ## Usage
 
@@ -31,6 +33,15 @@ npx tldr "*"
 
 # display topics matching pattern:
 npx tldr "build*"
+```
+
+## Meta Commands
+
+> All meta commands (that act on TL;DR itself, and not the documents) are suffixed with `!`.
+
+```sh
+npx tldr init!   # initialize a TLDR.md file for your project
+npx tldr list!   # list available topics (found in docs/tldr)
 ```
 
 ## Prior Art
