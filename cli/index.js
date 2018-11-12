@@ -8,7 +8,7 @@ switch (argv._[0]) {
     tldr.init()
     break
   case 'list!':
-    tldr.printTopics()
+    console.log(tldr.listTopics().join('\n'))
     break
   default:
     const patterns = argv._
