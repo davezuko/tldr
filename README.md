@@ -7,9 +7,11 @@ Easily manage TL;DR pages for your project to help users figure out what scripts
 ```sh
 yarn add --dev @packit/tldr       # yarn users
 npm install --dev @packit/tldr    # npm users
-```
-Once installed, create a `tldr.md` file in the root of your project. You can use [our tldr.md file](./tldr.md) as a template.
 
+# create your first TL;DR document:
+npx tldr init!
+
+```
 Additionally, you can optionally create `{{topic}}.md` files in `docs/tldr`.
 
 ## Usage
