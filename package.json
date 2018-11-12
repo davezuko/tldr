@@ -13,7 +13,8 @@
     "tldr": "./bin/tldr"
   },
   "scripts": {
-    "tldr": "node ./cli/index.js"
+    "tldr": "node ./cli/index.js",
+    "format": "prettier --write \"**/*.{md,js}\""
   },
   "files": [
     "LICENSE",
@@ -22,6 +23,12 @@
     "bin",
     "lib"
   ],
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "bracketSpacing": false,
+    "trailingComma": "es5"
+  },
   "dependencies": {
     "chalk": "^2.4.1",
     "yargs": "^12.0.2"

@@ -12,6 +12,7 @@ npm install --dev @packit/tldr    # npm users
 npx tldr init!
 
 ```
+
 Additionally, you can optionally create `{{topic}}.md` files in `docs/tldr`.
 
 ## Usage
