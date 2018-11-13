@@ -18,6 +18,7 @@
   },
   "files": [
     "LICENSE",
+    "TLDR.md",
     "README.md",
     "index.js",
     "bin",
