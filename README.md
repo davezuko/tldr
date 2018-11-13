@@ -2,6 +2,8 @@
 
 Easily create and manage TL;DR pages to help users find their way around your project. These pages are designed to supplement, not replace, richer documentation, and should act as a quick reference manual for common tasks.
 
+See an example [here](./docs/example-screenshot.png).
+
 ## Installation
 
 ```sh
