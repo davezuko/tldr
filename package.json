@@ -1,6 +1,6 @@
 {
   "name": "@packit/tldr",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Easily manage TL;DR pages for your project",
   "main": "lib/index.js",
   "license": "MIT",
