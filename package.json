@@ -20,8 +20,8 @@
     "LICENSE",
     "TLDR.md",
     "README.md",
-    "index.js",
     "bin",
+    "cli",
     "lib"
   ],
   "prettier": {
