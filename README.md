@@ -12,7 +12,6 @@ npm install --dev @packit/tldr    # npm users
 
 # create your first TL;DR document:
 npx tldr init!
-
 ```
 
 Additionally, you can optionally create `{{topic}}.md` files in `docs/tldr`.
